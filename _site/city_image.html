@@ -252,24 +252,6 @@ div.csl-indent {
 <p>Аннотируем все тексты при помощи модели “syntagrus” и сохраним некоторые знаменательные части речи, которые будут действительно информативны при анализе контекстуально близких слов. Конечно, такое решение будет означать, что при дальнейшем делении текста “окна” не будут строго равны по величине (в каких-то фрагментах оригинального текста, несомненно, будет больше или меньше служебных частей речи). Однако такое решение, несомненно, предпочтительнее, чем полный отказ от лемматизации.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">udpipe_download_model</span>(<span class="at">language =</span> <span class="st">"russian-syntagrus"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Downloading udpipe model from https://raw.githubusercontent.com/jwijffels/udpipe.models.ud.2.5/master/inst/udpipe-ud-2.5-191206/russian-syntagrus-ud-2.5-191206.udpipe to D:/Desktop/R directory/Alexandria Quartet Website/russian-syntagrus-ud-2.5-191206.udpipe</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code> - This model has been trained on version 2.5 of data from https://universaldependencies.org</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code> - The model is distributed under the CC-BY-SA-NC license: https://creativecommons.org/licenses/by-nc-sa/4.0</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code> - Visit https://github.com/jwijffels/udpipe.models.ud.2.5 for model license details.</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code> - For a list of all models and their licenses (most models you can download with this package have either a CC-BY-SA or a CC-BY-SA-NC license) read the documentation at ?udpipe_download_model. For building your own models: visit the documentation by typing vignette('udpipe-train', package = 'udpipe')</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Downloading finished, model stored at 'D:/Desktop/R directory/Alexandria Quartet Website/russian-syntagrus-ud-2.5-191206.udpipe'</code></pre>
-</div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           language
 1 russian-syntagrus
@@ -280,16 +262,16 @@ div.csl-indent {
   download_failed download_message
 1           FALSE               OK</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>syntagrus <span class="ot">&lt;-</span> <span class="fu">udpipe_load_model</span>(<span class="at">file =</span> <span class="st">"russian-syntagrus-ud-2.5-191206.udpipe"</span>)</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>annotated <span class="ot">&lt;-</span> <span class="fu">udpipe_annotate</span>(syntagrus, all_books<span class="sc">$</span>Текст, Книга <span class="ot">=</span>  all_books<span class="sc">$</span>Книга)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>annotated_tb <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(annotated)</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>notion_words <span class="ot">&lt;-</span> annotated_tb <span class="sc">|&gt;</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span> (upos <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"NOUN"</span>, <span class="st">"VERB"</span>, <span class="st">"ADJ"</span>, <span class="st">"PROPN"</span>)) </span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>nested <span class="ot">&lt;-</span> notion_words <span class="sc">|&gt;</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span> (doc_id, lemma) <span class="sc">|&gt;</span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nest</span> (<span class="at">lemmas =</span> <span class="fu">c</span>(lemma)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>syntagrus <span class="ot">&lt;-</span> <span class="fu">udpipe_load_model</span>(<span class="at">file =</span> <span class="st">"russian-syntagrus-ud-2.5-191206.udpipe"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>annotated <span class="ot">&lt;-</span> <span class="fu">udpipe_annotate</span>(syntagrus, all_books<span class="sc">$</span>Текст, Книга <span class="ot">=</span>  all_books<span class="sc">$</span>Книга)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>annotated_tb <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(annotated)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>notion_words <span class="ot">&lt;-</span> annotated_tb <span class="sc">|&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span> (upos <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"NOUN"</span>, <span class="st">"VERB"</span>, <span class="st">"ADJ"</span>, <span class="st">"PROPN"</span>)) </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>nested <span class="ot">&lt;-</span> notion_words <span class="sc">|&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span> (doc_id, lemma) <span class="sc">|&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nest</span> (<span class="at">lemmas =</span> <span class="fu">c</span>(lemma)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>do with Durrell’s dwelling on sex in the four novels. <span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 6</a>)</span> In the four novels we are predominantly in contact with the cosmopolitan society of the city,<span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 6</a>)</span></p>
 <p>we get a glimpse of the darker side of life in Alexandria; when reading about the children’s brothel that Justine visits for example. <span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 6</a>)</span></p>

@@ -1,5 +1,7 @@
 ---
 title: '"Александрийский квартет" Л. Дж. Даррелла'
+author: "Дарья Галкина"
+date: "2024-12-22"
 format: html
 editor: visual
 embed-resources: true
