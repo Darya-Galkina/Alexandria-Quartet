@@ -153,7 +153,7 @@ div.csl-indent {
 <span class="menu-text">Образ Города в романе: опыт векторного представления текста</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.qmd"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">Для Ольги Валерьевны</span></a>
   </li>  
 </ul>
@@ -166,13 +166,35 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Страницы</h2>
+   
+  <ul>
+  <li><a href="#дизайн-исследования" id="toc-дизайн-исследования" class="nav-link active" data-scroll-target="#дизайн-исследования">Дизайн исследования</a></li>
+  <li><a href="#ход-работы" id="toc-ход-работы" class="nav-link" data-scroll-target="#ход-работы">Ход работы</a>
+  <ul class="collapse">
+  <li><a href="#подготовка-данных" id="toc-подготовка-данных" class="nav-link" data-scroll-target="#подготовка-данных">Подготовка данных</a></li>
+  <li><a href="#лемматизация" id="toc-лемматизация" class="nav-link" data-scroll-target="#лемматизация">Лемматизация</a></li>
+  <li><a href="#оценка-точечной-взаимной-информации" id="toc-оценка-точечной-взаимной-информации" class="nav-link" data-scroll-target="#оценка-точечной-взаимной-информации">Оценка точечной взаимной информации</a></li>
+  </ul></li>
+  <li><a href="#поиск-ближайших-по-контексту-слов" id="toc-поиск-ближайших-по-контексту-слов" class="nav-link" data-scroll-target="#поиск-ближайших-по-контексту-слов">Поиск ближайших по контексту слов</a>
+  <ul class="collapse">
+  <li><a href="#жюстин" id="toc-жюстин" class="nav-link" data-scroll-target="#жюстин">“Жюстин”</a></li>
+  <li><a href="#бальтазар" id="toc-бальтазар" class="nav-link" data-scroll-target="#бальтазар">“Бальтазар”</a></li>
+  <li><a href="#маунтолив" id="toc-маунтолив" class="nav-link" data-scroll-target="#маунтолив">“Маунтолив”</a></li>
+  <li><a href="#клеа" id="toc-клеа" class="nav-link" data-scroll-target="#клеа">“Клеа”</a></li>
+  </ul></li>
+  <li><a href="#вместо-заключения" id="toc-вместо-заключения" class="nav-link" data-scroll-target="#вместо-заключения">Вместо заключения</a></li>
+  </ul>
+</nav>
+</nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -181,7 +203,7 @@ div.csl-indent {
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-right">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -205,10 +227,8 @@ div.csl-indent {
 </header>
 
 
+<p>Первый роман тетралогии “Александрийский квартет” открывает следующее уведомление:</p>
 <i>
-<div style="text-align: center;">
-Уведомление
-</div>
 <div style="text-align: center;">
 Персонажи этой книги, первой из четырех, 
 являются полностью вымышленными, 
@@ -219,7 +239,36 @@ div.csl-indent {
 <div style="text-align: right;">
 Л. Даррелл, "Жюстин"
 </div>
-<p>В данной работе я пользовалась электронной копией романа (любезно предоставленной мне переводчиком для исследовательских целей), так как опубликованный после редакторских правок текст не доступен в открытом доступе и защищён авторским правом. Книги хранятся в формате “.docx” и, как показала пробная лемматизация, не нуждаются в глубокой очистке. Однако для приведения данных к опрятному формату унифицируем кавычки.</p>
+<p>Это сообщение призвано убедить читателя, что речь в романе пойдёт о вымышленных персонажах и ситуациях, которые однако будут разворачиваться в декорациях реального египеского города. С этой иллюзией читатель погружается в атмосферу романа и по прочтении, полностью очарованный образом довоенной Александрии, остётся убеждённым в том, что именно такой она предстала перед Дарреллом во время его предывания в Египте. Оставим читателя в счастливом неведении и приведём строки из письма Даррелла своему другу Генри Миллеру, представляющие Александрю времён Даррелла в другом свете:</p>
+<blockquote class="blockquote">
+<p>Then this smashed up broken down shabby Neapolitan town, with its Levantine mounds of houses peeling in the sun. A sea flat, dirty brown and waveless rubbing the port. Arabic, Coptic, Greek, Levant French; no music, no art, no real gaiety. A saturated middle European boredom laced with drink and Packards and beach-cabins. NO SUBJECT OF CONVERSATION EXCEPT MONEY. Even love is thought of in money terms. […] No, if one could write a single line of anything that had a human smell to it here, one would be a genius. <span class="citation" data-cites="correspondence">(<a href="#ref-correspondence" role="doc-biblioref">M. Durrell Lawrence 1963</a>)</span>, Correspondence</p>
+</blockquote>
+<p>Это лукавство Даррелла не прошло незамеченным в критикеских работах, посвящённых роману. Так, было высказано следующее предположение: “The contrast with the fictional Alexandria explains après coup Durrell’s eagerness to leave the real and uninspiring Alexandria in order to write his own version” <span class="citation" data-cites="herbrechter">(<a href="#ref-herbrechter" role="doc-biblioref">Herbrechter 1999, 269</a>)</span>.</p>
+<p>Так или иначе, большинство известных нам исследователей этого романа склонны выделять Александрию в качестве отдельного персонажа, так как её выпуклый и запоминающийся образ является неотъемлемой частью текста: “Alexandria would not be Alexandria without its faded history, its cafés, brothels, cosmopolitan society and its beggars” <span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 11</a>)</span>. О давлеющей роли локуса, формирующем основу романа, а также о функциональной роли персонажей в нём напишет и сам автор: “What makes ‘big’ books is surely as much to do with their site as their characters and incidents. […] When they are well and truly anchored in nature they usually become classics. […] You could not transplant them without totally damaging their ambience and mood. […] This has nothing I think to do with the manners and habits of the human beings who populate them; for they exist in nature, as a function of place” <span class="citation" data-cites="durrell">(<a href="#ref-durrell" role="doc-biblioref">L. Durrell 1969, 163</a>)</span>. А также: “Darley sees himself and the others “[…] not as men and women any longer […] but beings unconsciously made part of place, buried to the waist among the ruins of a single city, steeped in its values […]” <span class="citation" data-cites="balthazar">(<a href="#ref-balthazar" role="doc-biblioref">L. Durrell 1991, 225</a>)</span>“.</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://i.pinimg.com/originals/a3/b3/bc/a3b3bc96dfe45f9b6e34495eae2dbf80.jpg" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://i.pinimg.com/736x/d5/b3/c4/d5b3c4c3c2c729f4ba838d02d74ea1db.jpg" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<section id="дизайн-исследования" class="level1">
+<h1>Дизайн исследования</h1>
+<p>В этой связи мне стало интересно опробовать количественные методы анализа текста на материале этого романа и рассмотреть образ Александрии через призму векторизованного контекстуального окружения слов, которые могут быть связаны с образом города.</p>
+<p>Оговорюсь, что данное исследование не призвано открыть новую страницу в богатой истории трактовки романа. На мой взгляд, система образов - один из наиболее трудно формализуемых элементов художественного текста, поэтому её анализ остаётся прерогативой близкого чтения. Тем не менее, в данной работе предпринята попытка количественного анализа текста, в рамках которой я надеюсь прокомментировать некоторые из традиционных положений, выдвигаемых литературоведами в отношении образа города, а также оценить потенциал метода точной взаимной информации для изучения образной системы художественного текста.</p>
+<p>В рамках данной работы предлагается разделить текст на контекстные окна, которые будут отражать информацию о совместной встречаемости слов, а затем посчитать меру взаимной информации между словами, которая позволит определить, в каких словах автор обычно описывает Александрию.</p>
+</section>
+<section id="ход-работы" class="level1">
+<h1>Ход работы</h1>
+<section id="подготовка-данных" class="level2">
+<h2 class="anchored" data-anchor-id="подготовка-данных">Подготовка данных</h2>
+<p>Материалом для работы послужила электронная копия романа (любезно предоставленная мне переводчиком для исследовательских целей), так как опубликованный после редакторских правок текст не доступен в открытом доступе и защищён авторским правом. Книги хранятся в формате “.docx” и, как показала пробная лемматизация, не нуждаются в глубокой очистке. Однако для приведения данных к опрятному формату унифицируем кавычки, избавимся от упоминаний автора и названия книги, а также примечаний переводчика.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readtext)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
@@ -246,67 +295,350 @@ div.csl-indent {
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(text)</span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>all_books <span class="ot">&lt;-</span> all_books <span class="sc">|&gt;</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(Текст <span class="ot">=</span> <span class="fu">unify_quotes</span>(Текст))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>delete_footnotes <span class="ot">&lt;-</span> <span class="cf">function</span>(text) {</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  text <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span>(text, <span class="st">"(?s)(?i)Примечания.*$"</span>, <span class="st">""</span>)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(text)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>delete_novel_info <span class="ot">&lt;-</span> <span class="cf">function</span>(text) {</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  text <span class="ot">&lt;-</span> <span class="fu">str_replace_all</span> (text, <span class="st">"(?i)(Лоренс Даррелл|Жюстин|Бальтазар|Маунтолив|Клеа|Александрийский квартет)"</span>, <span class="st">""</span>)</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(text)</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>all_books <span class="ot">&lt;-</span> all_books <span class="sc">|&gt;</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(Текст <span class="ot">=</span> <span class="fu">unify_quotes</span>(Текст)) <span class="sc">|&gt;</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(Текст <span class="ot">=</span> <span class="fu">delete_footnotes</span>(Текст)) <span class="sc">|&gt;</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(Текст <span class="ot">=</span> <span class="fu">delete_novel_info</span>(Текст))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="лемматизация" class="level2">
+<h2 class="anchored" data-anchor-id="лемматизация">Лемматизация</h2>
 <p>Аннотируем все тексты при помощи модели “syntagrus” и сохраним некоторые знаменательные части речи, которые будут действительно информативны при анализе контекстуально близких слов. Конечно, такое решение будет означать, что при дальнейшем делении текста “окна” не будут строго равны по величине (в каких-то фрагментах оригинального текста, несомненно, будет больше или меньше служебных частей речи). Однако такое решение, несомненно, предпочтительнее, чем полный отказ от лемматизации.</p>
+<p>Кроме того, необходимо оговориться, что лемматизация снимает местоименную анафору, а значит поиск слов, связанных с городом, не будет принимать во внимание местоимения, к ним относящиеся. Конечно, в лемматизированном датасете хранится информация о вершинах, к которым относятся местоимения (в границах одного предложения), но отслеживание таких связей составляет отдельный предмет исследования. В оправдание игнорирования этого аспекта в данной работе заметим, что расстояние между главным словом и относящимся к нему местоимением обычно не превышает 1-2 предложений и будет компенсировано величиной окна.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">udpipe_download_model</span>(<span class="at">language =</span> <span class="st">"russian-syntagrus"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>syntagrus <span class="ot">&lt;-</span> <span class="fu">udpipe_load_model</span>(<span class="at">file =</span> <span class="st">"russian-syntagrus-ud-2.5-191206.udpipe"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>annotated <span class="ot">&lt;-</span> <span class="fu">udpipe_annotate</span>(syntagrus, all_books<span class="sc">$</span>Текст, Книга <span class="ot">=</span>  all_books<span class="sc">$</span>Книга)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>annotated_tb <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(annotated)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>notion_words <span class="ot">&lt;-</span> annotated_tb <span class="sc">|&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span> (upos <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"NOUN"</span>, <span class="st">"VERB"</span>, <span class="st">"ADJ"</span>, <span class="st">"PROPN"</span>)) </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>nested <span class="ot">&lt;-</span> notion_words <span class="sc">|&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span> (doc_id, lemma) <span class="sc">|&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nest</span> (<span class="at">lemmas =</span> <span class="fu">c</span>(lemma)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="оценка-точечной-взаимной-информации" class="level2">
+<h2 class="anchored" data-anchor-id="оценка-точечной-взаимной-информации">Оценка точечной взаимной информации</h2>
+<p>Разделим романы на контекстные окна фиксированной величины. Я проводила эксперименты с разными размерами окон и остановилась на 15-ти словах как аналоге развёрнутой фразы/небольшого абзаца, в рамках которой можно говорить о контекстуальных взаимосвязях.</p>
+<p>Сначала применим алгоритм к первому роману тетралогии, к “Жюстин”, а затем повторим то же самое для остальных книг и проанализируем результаты. Вычислим PPMI, чтобы избавиться от отрицательных значений PMI (они свидетельствуют о том, что вероятность встретить два слова в контексте выше, чем вероятность встретить их по отдельности; такие выводы требуют проверки на большом корпусе, поэтому плохо интерпретируемы в рамках текущей работы).</p>
+<p>Затем сделам матрицу менее разреженной при помощи сингулярного разложения матрицы (SVD).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>slide_windows <span class="ot">&lt;-</span> <span class="cf">function</span>(tbl, window_size) {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  skipgrams <span class="ot">&lt;-</span> slider<span class="sc">::</span><span class="fu">slide</span>(</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    tbl, </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>.x, </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">.after =</span> window_size <span class="sc">-</span> <span class="dv">1</span>, </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">.step =</span> <span class="dv">1</span>, </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">.complete =</span> <span class="cn">TRUE</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  safe_mutate <span class="ot">&lt;-</span> <span class="fu">safely</span>(mutate)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">map2</span>(skipgrams,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>              <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(skipgrams),</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>              <span class="sc">~</span> <span class="fu">safe_mutate</span>(.x, <span class="at">window_id =</span> .y))</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  out <span class="sc">|&gt;</span> </span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">transpose</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pluck</span>(<span class="st">"result"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">compact</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">bind_rows</span>()</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>windowed_Justine <span class="ot">&lt;-</span> nested <span class="sc">|&gt;</span> </span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span> (doc_id <span class="sc">==</span> <span class="st">"doc1"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">lemmas =</span> <span class="fu">map</span>(lemmas, slide_windows, <span class="dv">20</span>L)) <span class="sc">|&gt;</span> </span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unnest</span>(lemmas) <span class="sc">|&gt;</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span> (<span class="sc">-</span> doc_id)</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>pmi_tbl_Justine <span class="ot">&lt;-</span> windowed_Justine  <span class="sc">|&gt;</span> </span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pairwise_pmi</span>(lemma, window_id) </span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>ppmi_tbl_Justine <span class="ot">&lt;-</span> pmi_tbl_Justine <span class="sc">|&gt;</span> </span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ppmi =</span> <span class="fu">case_when</span>(pmi <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">~</span> <span class="dv">0</span>, <span class="at">.default =</span> pmi))</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>word_emb_Justine <span class="ot">&lt;-</span> ppmi_tbl_Justine <span class="sc">|&gt;</span> </span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">widely_svd</span>(item1, item2, ppmi,</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>             <span class="at">weight_d =</span> <span class="cn">FALSE</span>, <span class="at">nv =</span> <span class="dv">100</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">word =</span> item1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="поиск-ближайших-по-контексту-слов" class="level1">
+<h1>Поиск ближайших по контексту слов</h1>
+<p>Для начала необходимо определиться, по каким словам стоит совершать поиск. Опытным путём выяснилось, что слова “Александрия” и “город”, как и ожидалось, довольно частотны и показательны. В некоторых книгах также иллюстративен был поиск контекста к слову “улица” - место действия большинства сцен романа. Были также предприняты попытки искать контекстуально близкие слова к леммам “тротуар” и “минарет” (landmark александрийского пейзажа), но результаты не были достаточно информативны.</p>
+<section id="жюстин" class="level2">
+<h2 class="anchored" data-anchor-id="жюстин">“Жюстин”</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>nearest_neighbors <span class="ot">&lt;-</span> <span class="cf">function</span>(df, feat, <span class="at">doc=</span>F) {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  inner_f <span class="ot">&lt;-</span> <span class="cf">function</span>() {</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">widely</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>      <span class="sc">~</span> {</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        y <span class="ot">&lt;-</span> .[<span class="fu">rep</span>(feat, <span class="fu">nrow</span>(.)), ]</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        res <span class="ot">&lt;-</span> <span class="fu">rowSums</span>(. <span class="sc">*</span> y) <span class="sc">/</span> </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>          (<span class="fu">sqrt</span>(<span class="fu">rowSums</span>(. <span class="sc">^</span> <span class="dv">2</span>)) <span class="sc">*</span> <span class="fu">sqrt</span>(<span class="fu">sum</span>(.[feat, ] <span class="sc">^</span> <span class="dv">2</span>)))</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">matrix</span>(res, <span class="at">ncol =</span> <span class="dv">1</span>, <span class="at">dimnames =</span> <span class="fu">list</span>(<span class="at">x =</span> <span class="fu">names</span>(res)))</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      },</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">sort =</span> <span class="cn">TRUE</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    )}</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (doc) {</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    df <span class="sc">|&gt;</span> <span class="fu">inner_f</span>()(doc, dimension, value) }</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span> {</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    df <span class="sc">|&gt;</span> <span class="fu">inner_f</span>()(word, dimension, value)</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  } <span class="sc">|&gt;</span> </span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(<span class="sc">-</span>item2)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>word_emb_Justine <span class="sc">|&gt;</span> </span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nearest_neighbors</span> (<span class="st">"город"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>           language
-1 russian-syntagrus
-                                                                                file_model
-1 D:/Desktop/R directory/Alexandria Quartet Website/russian-syntagrus-ud-2.5-191206.udpipe
-                                                                                                                                       url
-1 https://raw.githubusercontent.com/jwijffels/udpipe.models.ud.2.5/master/inst/udpipe-ud-2.5-191206/russian-syntagrus-ud-2.5-191206.udpipe
-  download_failed download_message
-1           FALSE               OK</code></pre>
+<pre><code># A tibble: 10,519 × 2
+   item1       value
+   &lt;chr&gt;       &lt;dbl&gt;
+ 1 город       1    
+ 2 Александрия 0.550
+ 3 улица       0.444
+ 4 разрушить   0.393
+ 5 Мелисса     0.380
+ 6 часть       0.372
+ 7 сам         0.370
+ 8 дело        0.360
+ 9 день        0.360
+10 жить        0.351
+# ℹ 10,509 more rows</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>syntagrus <span class="ot">&lt;-</span> <span class="fu">udpipe_load_model</span>(<span class="at">file =</span> <span class="st">"russian-syntagrus-ud-2.5-191206.udpipe"</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>annotated <span class="ot">&lt;-</span> <span class="fu">udpipe_annotate</span>(syntagrus, all_books<span class="sc">$</span>Текст, Книга <span class="ot">=</span>  all_books<span class="sc">$</span>Книга)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>annotated_tb <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(annotated)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>notion_words <span class="ot">&lt;-</span> annotated_tb <span class="sc">|&gt;</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span> (upos <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"NOUN"</span>, <span class="st">"VERB"</span>, <span class="st">"ADJ"</span>, <span class="st">"PROPN"</span>)) </span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>nested <span class="ot">&lt;-</span> notion_words <span class="sc">|&gt;</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span> (doc_id, lemma) <span class="sc">|&gt;</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nest</span> (<span class="at">lemmas =</span> <span class="fu">c</span>(lemma)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>word_emb_Justine <span class="sc">|&gt;</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nearest_neighbors</span> (<span class="st">"Александрия"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10,519 × 2
+   item1       value
+   &lt;chr&gt;       &lt;dbl&gt;
+ 1 Александрия 1    
+ 2 город       0.550
+ 3 Антоний     0.470
+ 4 мелодия     0.438
+ 5 прость      0.436
+ 6 мечта       0.433
+ 7 отважный    0.432
+ 8 ,к          0.432
+ 9 снисходеть  0.432
+10 обманиться  0.431
+# ℹ 10,509 more rows</code></pre>
 </div>
-<p>do with Durrell’s dwelling on sex in the four novels. <span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 6</a>)</span> In the four novels we are predominantly in contact with the cosmopolitan society of the city,<span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 6</a>)</span></p>
-<p>we get a glimpse of the darker side of life in Alexandria; when reading about the children’s brothel that Justine visits for example. <span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 6</a>)</span></p>
-<p>The contrast with the fictional Alexandria explains après coup Durrell’s eagerness to leave the real and uninspiring Alexandria in order to write his own version <span class="citation" data-cites="herbrechter">(<a href="#ref-herbrechter" role="doc-biblioref">Herbrechter 1999, 269</a>)</span>.</p>
-<p>Alexandria is more than once compared to a woman and more than once compared to Justine in particular, and the ambiguity that surrounds both is clear from the beginning. <span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 8</a>)</span></p>
-<p>“It is not surprising that Durrell turned to Cavafy’s poetry to enrich his Quartet; during his years in Alexandria, his state of mind in the atmosphere of the city was such that he must have felt an affinity with the Greek poet” (Katope 125-126).</p>
-<p>What makes ‘big’ books is surely as much to do with their site as their characters and incidents. […] When they are well and truly anchored in nature they usually become classics. […] You could not transplant them without totally damaging their ambience and mood. […] This has nothing I think to do with the manners and habits of the human beings who populate them; for they exist in nature, as a function of place. <span class="citation" data-cites="durrell">(<a href="#ref-durrell" role="doc-biblioref">Durrell 1969, 163</a>)</span></p>
-<p>Darley sees himself and the others “[…] not as men and women any longer […] but beings unconsciously made part of place, buried to the waist among the ruins of a single city, steeped in its values […]” <span class="citation" data-cites="balthazar">(<a href="#ref-balthazar" role="doc-biblioref">Durrell 1991, 225</a>)</span>.</p>
-<p>Alexandria would not be Alexandria without its faded history, its cafés, brothels, cosmopolitan society and its beggars. <span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 11</a>)</span></p>
-<div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>word_emb_Justine <span class="sc">|&gt;</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nearest_neighbors</span> (<span class="st">"Город"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10,519 × 2
+   item1         value
+   &lt;chr&gt;         &lt;dbl&gt;
+ 1 Город         1    
+ 2 платонический 0.999
+ 3 посредник     0.997
+ 4 чубук         0.994
+ 5 Лакадиф       0.976
+ 6 ботанический  0.861
+ 7 божество      0.857
+ 8 поделать      0.856
+ 9 козел         0.844
+10 архив         0.838
+# ℹ 10,509 more rows</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>word_emb_Justine <span class="sc">|&gt;</span> </span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">nearest_neighbors</span> (<span class="st">"улица"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10,519 × 2
+   item1       value
+   &lt;chr&gt;       &lt;dbl&gt;
+ 1 улица       1    
+ 2 столица     0.467
+ 3 стареющий   0.463
+ 4 сладковатый 0.457
+ 5 спекшеяться 0.454
+ 6 размякнуть  0.446
+ 7 город       0.444
+ 8 нищий       0.420
+ 9 размалевать 0.416
+10 закончиться 0.415
+# ℹ 10,509 more rows</code></pre>
+</div>
+</div>
+<p>Проанализируем контекстуально близкие к искомым слова. Заметим, что в результатах присутствует много ошибок лемматизации, которые объясняются богатым барочным языком романа с вкраплениями низкоупотребительной лексики, а также наличием реалий и большого количества имён собственных. Однако ошибки лемматизации не препятствуют анализу текста, так как в большинстве случаев можно реконструировать правильную лемму.</p>
+<p>Рассмотрим, из каких компонент вырисовывается образ города. Слова “размалёванный” (“размалеванных хибарок местных шлюх”), “нищий” и “Мелисса” (возлюбленная рассказчика, проститутка) создают впечатление развращённого и дешёвого места, “уличной” Александрии, города доступной любви. Об этом аспекте романа пишет <span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 6</a>)</span>: “Durrell’s dwelling on sex in the four novels”. Этому чувству “низкого” также созвучен эпизод книги, где упоминается слово “красить”: “Но потом еще несколько дней глина на улице была пропитана его кровью [разезанного на улице верблюда] и красила красным наши босые ноги”, а также слова “спекаться” и “сладковатый” (слова, оставляющие тягостное впечатление): “Улица из спекшейся, со сладковатым запахом глины, размякшей под дождем, но не мокрой”.</p>
+<p>Другое наблюдение <span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 6</a>)</span>, космополитизм города (“In the four novels we are pre predominantly in contact with the cosmopolitan society of the city”), также подтверждается результатами векторизации: в этой книге встречается слово “сирийка”, которое впишется в ряд других национальностей и религий, обнаруженных при анализе других романов тетралогии.</p>
+<p>Упоминание Антония и “поэта” поднимает отдельный смысловой пласт романа. Речь идёт о К. Кавафисе, “старом поэте”, как он назван в книге, стихи которого прямо или косвенно цитируются к тексте. Даррелл читал по-гречески и мог по достоинству оценить творчество поэта, кроме того, как пишет <span class="citation" data-cites="katope">(<a href="#ref-katope" role="doc-biblioref">Katope 1969, 125–26</a>)</span>, его восприятие города было созвучно поэзии Кавафиса: “It is not surprising that Durrell turned to Cavafy’s poetry to enrich his Quartet; during his years in Alexandria, his state of mind in the atmosphere of the city was such that he must have felt an affinity with the Greek poet”. Среди упомянутых в тексте стихотворений поэта - <em>“Покидает Дионис Антония”</em> (ориг. <em>“Ἀπολείπειν ὁ θεὸς Ἀντώνιον”</em>) об осаде Александрии Октавианом. Согласно Плутарху, Антоний услышал звуки оркеста в ночь перед осадой, которые означали, что его покровитель Дионис покидает его и что Антонию нужно готовиться к расставанию с Александрией: “κι αποχαιρέτα την, την Αλεξάνδρεια που χάνεις”. Другое стихотворение Кавафиса, фигурирующее в тексте - «Город» - наоборот, говорит о невозможности героя сбежать из-под власти города. Упоминание великого греческого поэта, прочно укоренённого в александрийской культуре, и его стихов, описывающих город, довлеющий над судьбой персонажа, оказывается для Даррелла важным инструментом в формировании образа Александрии.</p>
+<p>Не менее важным видится упоминание “мелодии” (“мелодия оркестра”), которая задаёт мотив карнавальности и характеризует Александрию как пространство праздника. Эта компонента получит своё развитие и в других книгах тетралогии.</p>
+<p>Стоит также пояснить слова “платонический”, “посредник”, “ботанический” и “козёл”. Как ни странно, они характеризуют одного персонажа: “Бальтазар — его [города] платонический <em>daimon</em>, посредник между его божествами и его людьми”. Этот герой напоминает рассказчику “ботанического козла”, “Пана” с “козлиными глазами”. Бальтазар - несомненно, ключ к пониманию образа города, его “демон”, поэтому их совместное упоминание вполне объяснимо.</p>
+<p>Также среди ближайших соседей искомых слов встречаются упоминания кафе «Аль Актар» - фигуранта большого количества эпизодов романа, игры “триктрак”, репрезентующей сцены аристократичной жизни богатых александрийцев, и Мнемджяна - персонажа, которого рассказчик называет “архивом города”.</p>
+</section>
+<section id="бальтазар" class="level2">
+<h2 class="anchored" data-anchor-id="бальтазар">“Бальтазар”</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10,211 × 2
+   item1        value
+   &lt;chr&gt;        &lt;dbl&gt;
+ 1 город        1    
+ 2 навес        0.414
+ 3 люстра       0.400
+ 4 отзвук       0.389
+ 5 далекий      0.384
+ 6 недетский    0.383
+ 7 украшение    0.379
+ 8 свисток      0.372
+ 9 оранжерейный 0.371
+10 бессонный    0.369
+# ℹ 10,201 more rows</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10,211 × 2
+   item1        value
+   &lt;chr&gt;        &lt;dbl&gt;
+ 1 Александрия  1    
+ 2 распоряжение 0.491
+ 3 экран        0.462
+ 4 веселенький  0.460
+ 5 заказ        0.458
+ 6 legerete     0.454
+ 7 каминный     0.454
+ 8 FATALITE     0.452
+ 9 MATERNITE    0.451
+10 heiн-лат     0.450
+# ℹ 10,201 more rows</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 10,211 × 2
+   item1        value
+   &lt;chr&gt;        &lt;dbl&gt;
+ 1 улица        1    
+ 2 выдыхать     0.626
+ 3 унять        0.589
+ 4 беспокойство 0.585
+ 5 выбежать     0.585
+ 6 запыхаться   0.576
+ 7 неопознанный 0.551
+ 8 соседний     0.551
+ 9 заметать     0.549
+10 задник       0.544
+# ℹ 10,201 more rows</code></pre>
+</div>
+</div>
+<p>В “Бальтазаре” громче звучит мотив праздника, начатый в “Жюстин”, и среди ближайших по контексту слов встречаются “люстра”, “оранжерейный”, “украшение”, “отзвук” [забытого карнавала], “пушинка” [гитарного перезвона в темном воздухе полночных улиц]. Здесь же можно отследить мотив тьмы, который, по мнению многих исследователей, является одним из самых характерных для первых трёх частей романа (что однако трудно утверждать, основываясь на результатах векторизации). Полагаю, оппозицию день/ночь, которая явно вырисовывается в тетралогии (путь от тьмы к свету в последней книге), сложно отследить, потому что упоминания соответствующей лексики контекстуально не связано со словом “город”.</p>
+<p>Тема карнавала пронизывает практически все связанные с городом контексты. Вот некоторые фрагменты текста, содержащие найденные слова: “На улицах города будет много <em>пастушек</em> и <em>арлекинов</em>, <em>Антониев</em> и <em>Клеопатр</em>, будут толпы Александров. &lt;…&gt; У ворот еще стояли <em>лимузины</em> и сонные слуги, но улицы уже успели опустеть, и шаги мои звучали диковато и резко, отлепляясь за моей спиной от тротуара”. В первом фрагменте также появляется упоминание масочности, обманчивости - ведущего мотива тетралогии. Он будет выражаться в упоминании луны, зеркал, масок и отражения в воде - того, что искажает истину. К сожалению, поиск контекстуальных соседей не позволяет приблизиться к этому аспекту интерпретации текста, так как он разлит в каждой сцене романа и не связан с городом контекстуально, но, без всяких сомнений, отражает его двуличную природу. О многоликости города напишет <span class="citation" data-cites="tauer">(<a href="#ref-tauer" role="doc-biblioref">Tauer 2010, 8</a>)</span> в связи с явной параллелью, проводимой между обманчивой героиней Жюстин и самим городом: “Alexandria is more than once compared to a woman and more than once compared to Justine in particular, and the ambiguity that surrounds both is clear from the beginning”.</p>
+</section>
+<section id="маунтолив" class="level2">
+<h2 class="anchored" data-anchor-id="маунтолив">“Маунтолив”</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 12,602 × 2
+   item1      value
+   &lt;chr&gt;      &lt;dbl&gt;
+ 1 город      1    
+ 2 хамсина    0.506
+ 3 весенний   0.503
+ 4 квартасть  0.486
+ 5 отвоевать  0.486
+ 6 грести     0.464
+ 7 Гранд      0.462
+ 8 вырядиться 0.460
+ 9 нежиться   0.455
+10 забредать  0.450
+# ℹ 12,592 more rows</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 12,602 × 2
+   item1         value
+   &lt;chr&gt;         &lt;dbl&gt;
+ 1 Александрия   1    
+ 2 приурочить    0.622
+ 3 приговаривать 0.603
+ 4 обходной      0.574
+ 5 перебираться  0.563
+ 6 мчаться       0.562
+ 7 душегубок     0.544
+ 8 праздничный   0.528
+ 9 перетекать    0.520
+10 Каир.         0.514
+# ℹ 12,592 more rows</code></pre>
+</div>
+</div>
+<p>“Маунтолив” - это, в первую очередь, детективный роман об английском дипломате в Египте, о чём говорят встретившиеся слова “штаб-квартира”, “спецпоезд”, “посольство”. Также в тексте присутствует много описывающих природу слов (“марево”, “финики”, “дюна”, “лето”, “хамсин”): действие романа часто происходит в пустыне, за городом.</p>
+<p>Наиболее ярким из представленных видится слово “химерический [город]” - довольно точное и поэтичное описание эклектичной Александрии.</p>
+</section>
+<section id="клеа" class="level2">
+<h2 class="anchored" data-anchor-id="клеа">“Клеа”</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 11,831 × 2
+   item1          value
+   &lt;chr&gt;          &lt;dbl&gt;
+ 1 город          1    
+ 2 Александрия    0.524
+ 3 капот          0.491
+ 4 стой           0.484
+ 5 прислониться   0.483
+ 6 почасовой      0.482
+ 7 уборная        0.480
+ 8 оплата         0.479
+ 9 неторопливость 0.477
+10 наклонность    0.468
+# ℹ 11,821 more rows</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 11,831 × 2
+   item1       value
+   &lt;chr&gt;       &lt;dbl&gt;
+ 1 Александрия 1    
+ 2 забвение    0.584
+ 3 завоевать   0.583
+ 4 приручить   0.582
+ 5 погрузить   0.581
+ 6 Амр         0.570
+ 7 немногое    0.561
+ 8 граница     0.556
+ 9 Царственный 0.539
+10 однородный  0.533
+# ℹ 11,821 more rows</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 11,831 × 2
+   item1        value
+   &lt;chr&gt;        &lt;dbl&gt;
+ 1 улица        1    
+ 2 плистать     0.513
+ 3 чанин        0.508
+ 4 сусло        0.502
+ 5 гейзер       0.499
+ 6 Предощущение 0.496
+ 7 степной      0.492
+ 8 злоба        0.492
+ 9 нездешний    0.483
+10 повальный    0.482
+# ℹ 11,821 more rows</code></pre>
+</div>
+</div>
+<p>В “Клеа” читатель встречает живописный портрет города, описанный рассказчиком и не требующий дополнительных комментариев (найденные по контекстуальному поиску слова выделены курсивом): “Этот город всегда был <em>извращен</em>, но в том, как он следовал своим <em>извращенным</em> наклонностям, был стиль, этакая старомодная <em>неторопливость</em>, даже в постелях с <em>почасовой</em> оплатой: но не стоя же, не прислонившись к стене, или к дереву, или к <em>капоту</em> грузовика! А теперь город порой напоминает мне публичную <em>уборную</em>.</p>
+<p>На страницах этой книги также встречаются слова “царство” и “царственный”. “Как будто и им было дело до нашего отъезда с этого маленького острова: долгожданное посланье от Нессима наконец пришло — как повестка назад, в Царство Мертвых” - страшная перифраза отзначает Александрию, из которой рассказчик уезжает и откуда получает послания от знакомых. В другом фрагменте “царственный” служит способом мощного противопоставления, символизирующего противоречивость города: “Александрия, <em>принцесса</em> и <em>шлюха</em>. <em>Царственный</em> город и, разом, anus mund . Ты останешься неизменной <em>вовек</em>, покуда разные расы не перестанут здесь бродить, как <em>сусло</em> в <em>чане</em>; покуда тысячей фонтанов плещут – будто бы из-под земли – на улицы твои и площади химически активные <em>гейзеры</em> страстей и злобы, ярости и, вдруг, внезапных протрезвлений.</p>
+</section>
+</section>
+<section id="вместо-заключения" class="level1">
+<h1>Вместо заключения</h1>
+<p>На мой взгляд, в данной работе мне удалось подсветить многие важные аспекты, составляющие образ Александрии. Конечно, его анализ требует более тонкого и глубокого подхода, но не будет большим преувеличением утверждать, что PMI - довольно эффективный инструмент дальнего чтения при решении подобного рода задач, который позволяет охватить взглядом одним взглядом всю структуру серии романов, что всегда является нетривальной задачей при ближнем чтении.</p>
 
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://i.pinimg.com/originals/a3/b3/bc/a3b3bc96dfe45f9b6e34495eae2dbf80.jpg" class="img-fluid figure-img" style="width:45.0%"></p>
-<figcaption>Александрия, Арабский квартал</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://i.pinimg.com/736x/d5/b3/c4/d5b3c4c3c2c729f4ba838d02d74ea1db.jpg" class="img-fluid figure-img" style="width:45.0%"></p>
-<figcaption>Александрия, отель “Сесиль”</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
 
 
-
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-durrell" class="csl-entry" role="listitem">
@@ -315,8 +647,14 @@ Durrell, Lawrence. 1969. <em>Spirit of Place</em>. Faber; Faber.
 <div id="ref-balthazar" class="csl-entry" role="listitem">
 ———. 1991. <em>Balthazar</em>. Penguin.
 </div>
+<div id="ref-correspondence" class="csl-entry" role="listitem">
+Durrell, Miller, Lawrence. 1963. <span>“A Private Correspondence.”</span>
+</div>
 <div id="ref-herbrechter" class="csl-entry" role="listitem">
 Herbrechter, Stefan. 1999. <span>“Lawrence Durrell, Postmodernism and the Ethics of Alterity.”</span> <em>Postmodern Studies</em> 26: 97.
+</div>
+<div id="ref-katope" class="csl-entry" role="listitem">
+Katope, Christopher G. 1969. <span>“Cavafy and Durrell’s the Alexandria Quartet.”</span> <em>Comparative Literature</em> 2.
 </div>
 <div id="ref-tauer" class="csl-entry" role="listitem">
 Tauer, Kathrin. 2010. <span>“"Alexandria, Princess and Whore": The City and Its Exemplars in l. Durrell’s Alexandria Quartet.”</span> <em>DIPLOMARBEIT</em>, 97.
